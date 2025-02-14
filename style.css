@@ -1,102 +1,60 @@
-/* General Styles */
+/* styles.css */
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom right, #f7f9fc, #eaeef3);
-  color: #333;
-}
-
-/* Header Styles */
-header {
-  background-color: #007bff;
-  color: white;
-  padding: 1.5em 1em;
-  text-align: center;
-  border-bottom: 4px solid #0056b3;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  font-size: 2rem;
-  margin: 0;
-}
-
-/* Main Content Styles */
-main {
-  padding: 2em;
-  max-width: 800px;
-  margin: 0 auto;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Blog List Styles */
-.blog-list {
-  margin-bottom: 2em;
-}
-
-.blog-list h2 {
-  font-size: 1.8rem;
-  color: #007bff;
-  margin-bottom: 1em;
-}
-
-#blog-links {
-  list-style: none;
-  padding: 0;
-}
-
-#blog-links li {
-  margin: 0.5em 0;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0.5em;
-}
-
-#blog-links li a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  transition: color 0.3s, text-decoration 0.3s;
-}
-
-#blog-links li a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-/* Button Styles */
-#new-blog-btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 0.7em 1.5em;
-  font-size: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 25px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-#new-blog-btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  main {
-    padding: 1.5em;
-  }
-
-  #new-blog-btn {
-    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
     text-align: center;
-  }
 }
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-list {
+    list-style: none;
+    padding: 0;
+}
+
+.blog-list li {
+    background: #ffcc00;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-list a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+<div class="container">
+    <ul class="blog-list">
+        <li><a href="blog1.html">First Meeting of EmTech</a></li>
+        <li><a href="blog2.html">⚡ Learning About Electrical Circuits</a></li>
+        <li><a href="blog3.html">🏆 Intramurals Week Blog</a></li>
+        <li><a href="blog4.html">Proposing a Robot</a></li>
+        <li><a href="blog5.html">Last Meeting of EmTech</a></li>
+    </ul>
+</div>")}]}
