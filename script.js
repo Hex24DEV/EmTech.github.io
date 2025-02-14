@@ -2,9 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const blogLinks = [
-        { name: '📝 First Meeting of EmTech', url: 'blog1.html' },
-        { name: '⚡ Learning About Electrical Circuits', url: 'blog2.html' },
-        { name: '🏆 Intramurals Week Blog', url: 'blog3.html' },
+        { name: '📝 First Meeting of EmTech', url: 'blogs/blog1.html' },
+        { name: '⚡ Learning About Electrical Circuits', url: 'blogs/blog2.html' },
+        { name: '🏆 Intramurals Week Blog', url: 'blogs/blog3.html' },
         { name: '🤖 Proposing a Robot', url: 'blog4.html' },
         { name: '🎓 Last Meeting of EmTech', url: 'blog5.html' }
     ];
