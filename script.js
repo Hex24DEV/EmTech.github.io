@@ -1,12 +1,12 @@
 // script.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    const blogLinks = [
-        { name: '📝 First Meeting of EmTech', url: 'blogs/blog1.html' },
-        { name: '⚡ Learning About Electrical Circuits', url: 'blogs/blog2.html' },
-        { name: '🏆 Intramurals Week Blog', url: 'blogs/blog3.html' },
-        { name: '🤖 Proposing a Robot', url: 'blog4.html' },
-        { name: '🎓 Last Meeting of EmTech', url: 'blog5.html' }
+    let blogs = [
+        { name: '📝 First Meeting of EmTech', link: "blogs/blog1.html" },
+        { name: '⚡ Learning About Electrical Circuits', link: "blogs/blog2.html" },
+        { name: '🏆 Intramurals Week Blog', link: "blogs/blog3.html" },
+        { name: '🤖 Proposing a Robot', link: "blogs/blog4.html" },
+        { name: '🎓 Last Meeting of EmTech', link: "blogs/blog5.html" }
     ];
 
     const blogList = document.getElementById('blog-links');
