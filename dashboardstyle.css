@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  padding: 2em;
+}
+
+.blog-list {
+  margin-bottom: 2em;
+}
+
+.blog-list h2 {
+  color: #333;
+}
+
+#blog-links {
+  list-style: none;
+  padding: 0;
+}
+
+#blog-links li {
+  margin: 0.5em 0;
+}
+
+#blog-links li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+#blog-links li a:hover {
+  text-decoration: underline;
+}
+
+#new-blog-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#new-blog-btn:hover {
+  background-color: #0056b3;
+}
