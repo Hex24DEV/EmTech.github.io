@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: "Learning about Electrical Circuits", link: "./blogs/blog2.html" },
         { title: "INTRAMS", link: "./blogs/blog3.html" },
         { title: "PROPOSING A ROBOT", link: "./blogs/blog4.html" },
-        { title: "Blog Post #5", link: "./blogs/blog5.html" }
+        { title: "FIELD TRIP", link: "./blogs/blog5.html" }
     ];
 
     const blogList = document.getElementById('blog-links');
