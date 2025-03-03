@@ -3,119 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Arduino Robotics Activities</title>
+    <title>Arduino Robotics Projects</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e2e;
+            color: #f8f8f2;
+            margin: 0;
+            padding: 0;
         }
         .container {
             width: 80%;
             margin: auto;
-            background: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px gray;
         }
         h1 {
-            color: #333;
+            text-align: center;
+            color: #00d9ff;
         }
-        .activity {
-            margin: 20px 0;
+        .project {
+            background: #2e2e3e;
             padding: 20px;
-            border-bottom: 2px solid #ddd;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #00d9ff;
         }
         img {
-            width: 80%;
+            width: 100%;
             max-width: 600px;
-            border-radius: 10px;
-        }
-        pre {
-            background: #eee;
-            padding: 10px;
-            text-align: left;
-            overflow-x: auto;
+            display: block;
+            margin: 10px auto;
             border-radius: 5px;
+            border: 2px solid #00d9ff;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Our Arduino Robotics Activities</h1>
-
-        <div class="activity">
+        <h1>Arduino Robotics Projects</h1>
+        
+        <div class="project">
             <h2>Push Button Experiment</h2>
-            <p>We did this activity to learn how to use a push button with an Arduino.</p>
-            <img src="push_button.jpg" alt="Push Button Experiment">
-            <pre>
-int BUTTON_PIN = 2;
-void setup() {
-    pinMode(BUTTON_PIN, INPUT);
-    Serial.begin(9600);
-}
-void loop() {
-    if (digitalRead(BUTTON_PIN) == HIGH) {
-        Serial.println("BUTTON IS PRESSED");
-    } else {
-        Serial.println("BUTTON IS NOT PRESSED");
-    }
-    delay(100);
-}
-            </pre>
+            <img src="push_button.jpg" alt="Push Button Project">
+            <p>We did this activity to understand how push buttons work with Arduino. Pressing the button sends a signal to the board, which we monitored using the serial monitor.</p>
+        </div>
+        
+        <div class="project">
+            <h2>LED Brightness Control with Potentiometer</h2>
+            <img src="led_potentiometer.jpg" alt="LED Brightness Control">
+            <p>In this experiment, we used a potentiometer to control the brightness of an LED. It helped us learn about analog input and Pulse Width Modulation (PWM).</p>
+        </div>
+        
+        <div class="project">
+            <h2>Potentiometer Sensor Reading</h2>
+            <img src="potentiometer.jpg" alt="Potentiometer Experiment">
+            <p>We experimented with a potentiometer and used it as an input sensor. We observed how it changes resistance, which is read as an analog value.</p>
         </div>
 
-        <div class="activity">
-            <h2>Controlling LED Brightness with a Potentiometer</h2>
-            <p>We learned how to adjust LED brightness using a potentiometer in this experiment.</p>
-            <img src="led_potentiometer.jpg" alt="Potentiometer LED Control">
-            <pre>
-int potPin = A0;
-int ledPin = 9;
-void setup() {
-    pinMode(ledPin, OUTPUT);
-}
-void loop() {
-    int potValue = analogRead(potPin);
-    int ledBrightness = map(potValue, 0, 1023, 0, 255);
-    analogWrite(ledPin, ledBrightness);
-    delay(100);
-}
-            </pre>
+        <div class="project">
+            <h2>Controlling Buzzer Tone with Potentiometer</h2>
+            <img src="buzzer_potentiometer.jpg" alt="Buzzer Potentiometer">
+            <p>This activity allowed us to control the sound frequency of a buzzer using a potentiometer. By turning the knob, we could generate different tones.</p>
         </div>
-
-        <div class="activity">
+        
+        <div class="project">
             <h2>Passive Buzzer Melody Sound</h2>
-            <p>We experimented with generating different tones using a passive buzzer.</p>
-            <img src="passive_buzzer.jpg" alt="Passive Buzzer">
-            <pre>
-int buzzer = 13;
-void setup() {
-    pinMode(buzzer, OUTPUT);
-}
-void loop() {
-    tone(buzzer, random(500, 1500));
-    delay(300);
-}
-            </pre>
+            <img src="passive_buzzer.jpg" alt="Passive Buzzer Melody">
+            <p>We created a melody using a passive buzzer by sending different PWM signals. It was exciting to make our own sound patterns with Arduino!</p>
         </div>
 
-        <div class="activity">
+        <div class="project">
             <h2>Active Buzzer Alarm Sound</h2>
-            <p>We built a simple alarm using an active buzzer and Arduino.</p>
-            <img src="active_buzzer.jpg" alt="Active Buzzer">
-            <pre>
-int buzzer = 13;
-void setup() {
-    pinMode(buzzer, OUTPUT);
-}
-void loop() {
-    digitalWrite(buzzer, HIGH);
-    delay(500);
-    digitalWrite(buzzer, LOW);
-    delay(500);
-}
-            </pre>
+            <img src="active_buzzer.jpg" alt="Active Buzzer Alarm">
+            <p>For this project, we learned how to generate an alarm sound using an active buzzer. We used digital signals to turn it on and off at set intervals.</p>
+        </div>
+
+        <div class="project">
+            <h2>Blinking LED Experiment</h2>
+            <img src="blinking_led.jpg" alt="Blinking LED">
+            <p>We programmed an LED to blink on and off using a delay function. This was a simple but important step in learning how to control outputs with Arduino.</p>
         </div>
     </div>
 </body>
