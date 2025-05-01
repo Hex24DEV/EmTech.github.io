@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arduino Anti-Burglar System Project</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Building an Arduino Anti-Burglar System: A Class Project</h1>
+
+    <p>Our class recently explored the fascinating world of Arduino by working on a project that has real-world safety applications: an <strong>Anti-Burglar System</strong>. With just a few components and teamwork, we were able to create a basic yet effective security alarm system that can detect motion and alert users of intruders.</p>
+
+    <h2>What is an Anti-Burglar System?</h2>
+    <p>An anti-burglar system is designed to protect property from unauthorized access. Using sensors, it detects suspicious movements and activates alarms to scare off intruders or alert homeowners.</p>
+
+    <h2>How We Built It with Arduino</h2>
+    <p>We used the <strong>Arduino Uno</strong> along with a <strong>PIR (Passive Infrared) motion sensor</strong>, a <strong>buzzer</strong>, and LEDs to simulate a real-world anti-theft system. Our goals were simple:</p>
+    <ul>
+      <li>Detect motion within a certain range</li>
+      <li>Trigger a loud alarm (buzzer)</li>
+      <li>Activate an LED light when motion is detected</li>
+    </ul>
+
+    <h2>Step-by-Step Process</h2>
+    <ol>
+      <li><strong>Understanding the Components</strong> – We first studied how a PIR sensor works, which detects body heat and motion.</li>
+      <li><strong>Wiring the System</strong> – We connected the PIR sensor's output to a digital pin on the Arduino. A buzzer and an LED were also wired to activate when motion was detected.</li>
+      <li><strong>Programming the Arduino</strong> – Using the Arduino IDE, we uploaded a simple sketch that constantly monitors the PIR sensor. If movement is detected, it triggers the buzzer and LED.</li>
+      <li><strong>Testing & Tweaking</strong> – We adjusted the sensor's range and timing to reduce false alarms. We also experimented with adding a delay to keep the buzzer on for a few seconds after detection.</li>
+    </ol>
+
+    <h2>Key Learnings</h2>
+    <p>This project taught us several practical and technical skills:</p>
+    <ul>
+      <li>How PIR sensors work in real-world security systems</li>
+      <li>How to use digital inputs and outputs on the Arduino</li>
+      <li>Basic coding logic for motion detection</li>
+      <li>Problem-solving and collaboration within a team</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Building an anti-burglar system using Arduino was both fun and educational. It showed us how accessible technology can be used for real-life safety solutions. Our class enjoyed the challenge and learned valuable skills in electronics, coding, and teamwork along the way.</p>
+    <p>We hope to explore more advanced features in the future, like sending alerts to phones or integrating with cameras. For now, we're proud of what we accomplished—and how much we learned doing it.</p>
+  </div>
+</body>
+</html>
