@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: "PRACTICAL EXAMINATION", link: "./blogs/blog7.html" },
         { title: "FINALS ACTIVITY", link: "./blogs/blog8.html" },
         { title: "IP", link: "./blogs/blog9.html" },
-        { title: "blog 10", link: "./blogs/blog10.html" }
+        { title: "DEFENDED", link: "./blogs/blog10.html" }
+         { title: "ARDUINO KIT", link: "./blogs/blog11.html" },
+        { title: "ANTI-BURGLAR", link: "./blogs/blog12.html" },
+        { title: "blog 13", link: "./blogs/blog13.html" }
     ];
 
     const blogList = document.getElementById('blog-links');
