@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arduino Car Backing System Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #555;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Creating a Car Backing System with Arduino: Our Class Project Experience</h1>
+
+    <p>In our recent class project, we dove into the exciting world of electronics and automation using the <strong>Arduino Starter Kit</strong>. As part of our hands-on learning experience, we worked together to create a <strong>Car Backing System</strong>—a device designed to help cars detect obstacles while reversing, much like real-world parking sensors.</p>
+
+    <h2>What is a Car Backing System?</h2>
+    <p>A car backing system uses sensors—usually ultrasonic—to detect objects behind a vehicle. It alerts the driver with sounds or signals when something is too close, helping avoid accidents and making parking much easier and safer.</p>
+
+    <h2>The Arduino Experience</h2>
+    <p>We used the <strong>Arduino Uno</strong>, along with an <strong>ultrasonic sensor (HC-SR04)</strong>, a <strong>buzzer</strong>, and some jumper wires to build our prototype. Our main goals were to:</p>
+    <ul>
+      <li>Detect how far an object is from the sensor.</li>
+      <li>Trigger a buzzer sound if the object is too close.</li>
+      <li>Show distance readings via the Serial Monitor or an LED system.</li>
+    </ul>
+
+    <h2>Our Build Process</h2>
+    <ol>
+      <li><strong>Planning & Designing</strong> – We started by learning about how ultrasonic sensors work and how to connect them to the Arduino board. With guidance from our teacher, we planned our circuit using Tinkercad first before building it physically.</li>
+      <li><strong>Wiring the Circuit</strong> – Once we understood the circuit, we connected the sensor’s VCC, GND, Trig, and Echo pins to the Arduino. We also attached the buzzer that would sound the alarm.</li>
+      <li><strong>Coding the System</strong> – Using the Arduino IDE, we uploaded a sketch (code) that measured the distance between the sensor and any object behind it. If the distance was less than a certain threshold (e.g., 20 cm), the buzzer would beep faster as the object got closer.</li>
+      <li><strong>Testing & Troubleshooting</strong> – Of course, not everything worked perfectly on the first try! We learned how to debug our code, check our connections, and adjust values to make sure our system worked reliably.</li>
+    </ol>
+
+    <h2>What We Learned</h2>
+    <p>This project was not just about building something cool—it taught us real-life applications of STEM concepts, including:</p>
+    <ul>
+      <li>Basic electronics and circuit building</li>
+      <li>How ultrasonic sensors work</li>
+      <li>Writing and understanding simple Arduino code</li>
+      <li>Teamwork and troubleshooting</li>
+    </ul>
+
+    <h2>Final Thoughts</h2>
+    <p>Our Arduino car backing system was a success, and the whole class enjoyed the process. It gave us a taste of what it’s like to work on real-world tech projects, and many of us are now inspired to learn more about robotics and automation.</p>
+    <p>We're proud of what we built—and even more proud of what we learned. Who knew that with just a few electronic components and some teamwork, we could create a system that’s actually used in real cars today?</p>
+  </div>
+</body>
+</html>
