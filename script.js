@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: "DEFENDED", link: "./blogs/blog10.html" }
          { title: "ARDUINO KIT", link: "./blogs/blog11.html" },
         { title: "ANTI-BURGLAR", link: "./blogs/blog12.html" },
-        { title: "blog 13", link: "./blogs/blog13.html" }
+        { title: "RFID", link: "./blogs/blog13.html" }
+        { title: "IP BLOG", link: "./blogs/blog14.html" }
     ];
 
     const blogList = document.getElementById('blog-links');
