@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arduino RFID Door Lock System - Emp Tech Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    section {
+      background-color: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 800px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #007acc;
+    }
+    ul {
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Arduino RFID Door Lock System</h1>
+    <p>Our Empowerment Technologies Group Project</p>
+  </header>
+
+  <section>
+    <h2>🔐 Introduction</h2>
+    <p>As part of our <strong>Empowerment Technologies (Emp Tech)</strong> class, our group explored the world of automation and security by creating an <strong>RFID-based door lock system using Arduino</strong>. With the increasing use of smart security systems in homes and businesses, we wanted to understand how these technologies work — and build one ourselves.</p>
+  </section>
+
+  <section>
+    <h2>💡 What is an RFID Door Lock System?</h2>
+    <p><strong>RFID</strong> stands for <em>Radio Frequency Identification</em>. It uses radio waves to read data stored on tags (like key cards or fobs) without physical contact. In our system:</p>
+    <ul>
+      <li>The <strong>RFID tag/card</strong> acts like a key.</li>
+      <li>The <strong>RFID reader</strong> scans the tag.</li>
+      <li>The <strong>Arduino microcontroller</strong> decides whether to unlock the door based on the tag's unique ID.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📋 Materials We Used</h2>
+    <ul>
+      <li>Arduino Uno</li>
+      <li>RFID Reader (RC522 module)</li>
+      <li>RFID Tags/Cards</li>
+      <li>Servo Motor (acts as the locking mechanism)</li>
+      <li>Breadboard and Jumper Wires</li>
+      <li>LEDs (green for access granted, red for denied)</li>
+      <li>Buzzer (for audio feedback)</li>
+      <li>Power Source or USB cable</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🛠️ Steps in Making the Project</h2>
+    <h3>1. Research & Planning</h3>
+    <p>We began by learning about RFID technology and how it can be combined with Arduino. We looked for reliable circuit diagrams and code examples to guide us.</p>
+
+    <h3>2. Circuit Assembly</h3>
+    <p>We connected the RFID reader to the Arduino using the SPI interface. The servo was connected to control the locking mechanism, and LEDs were added for visual signals.</p>
+
+    <h3>3. Programming</h3>
+    <p>Using the Arduino IDE, we uploaded a program that:</p>
+    <ul>
+      <li>Reads the RFID tag’s unique ID.</li>
+      <li>Matches it against a list of authorized users.</li>
+      <li>Moves the servo to “unlock” if the tag is valid.</li>
+      <li>Activates the red LED and buzzer if access is denied.</li>
+    </ul>
+
+    <h3>4. Testing & Debugging</h3>
+    <p>We tested various RFID tags, added authorized IDs into the code, and fixed issues like incorrect pin connections and servo angles until it worked consistently.</p>
+  </section>
+
+  <section>
+    <h2>🎯 What We Learned</h2>
+    <ul>
+      <li>Hands-on Arduino programming and wiring</li>
+      <li>How RFID authentication systems work</li>
+      <li>Teamwork and collaboration</li>
+      <li>Problem-solving and patience during debugging</li>
+      <li>The value of tech in everyday life</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🚀 Future Ideas</h2>
+    <p>If given more time and budget, we’d love to improve the project by:</p>
+    <ul>
+      <li>Adding an LCD screen for messages like "Welcome!" or "Access Denied"</li>
+      <li>Storing data using an SD card or EEPROM</li>
+      <li>Connecting to a Wi-Fi module for remote access</li>
+      <li>Designing a 3D-printed case to house the system</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>✨ Conclusion</h2>
+    <p>Our Arduino RFID Door Lock System is more than just a school project — it’s a glimpse into how technology can solve real-world problems. Through this experience in <strong>Empowerment Technologies</strong>, we learned how to use digital tools not just for communication, but also for innovation and automation.</p>
+    <p>We're proud of what we created and excited to explore more tech-based projects in the future!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Our Emp Tech Group | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
